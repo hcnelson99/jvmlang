@@ -1,0 +1,12 @@
+(library
+ (name compiler)
+ (libraries core cmdliner yojson)
+ (inline_tests)
+ (preprocess
+  (pps ppx_jane ppx_expect)))
+
+(ocamllex
+ (modules c0_lexer))
+
+(menhir
+ (modules c0_parser))

@@ -1,0 +1,4 @@
+(executable
+ (name compile)
+ (modes byte exe)
+ (libraries compiler))
